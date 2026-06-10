@@ -1,0 +1,17 @@
+.neumorphic-button {
+  position: relative;
+}
+
+.neumorphic-button::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 300ms;
+  background: linear-gradient(to bottom right, rgba(59, 130, 246, 0.2), transparent); /* Blue tint */
+  border-radius: 9999px;
+}
+
+.neumorphic-button:hover::after {
+  opacity: 1;
+}
