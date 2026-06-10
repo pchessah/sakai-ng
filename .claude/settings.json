@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git commit -m ' *)",
+      "Bash(npm outdated *)",
+      "Bash(npm show *)",
+      "Bash(node -e \"const d=require\\('fs'\\).readFileSync\\('/dev/stdin','utf8'\\);const v=JSON.parse\\(d\\);console.log\\('Latest 5 PrimeNG:',v.slice\\(-5\\).join\\(', '\\)\\)\")",
+      "Bash(node -e \"process.stdin.resume\\(\\);let d='';process.stdin.on\\('data',c=>d+=c\\);process.stdin.on\\('end',\\(\\)=>{const v=JSON.parse\\(d\\);console.log\\('PrimeIcons latest:',v.slice\\(-3\\).join\\(', '\\)\\)}\\)\")"
+    ]
+  }
+}
